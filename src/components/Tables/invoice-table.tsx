@@ -1,4 +1,3 @@
-import { TrashIcon } from "@/assets/icons";
 import {
   Table,
   TableBody,
@@ -10,7 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import dayjs from "dayjs";
 import { getInvoiceTableData } from "./fetch";
-import { DownloadIcon, PreviewIcon } from "./icons";
+import { DownloadIcon, Eye, TrashIcon } from "lucide-react";
 
 export async function InvoiceTable() {
   const data = await getInvoiceTableData();
@@ -65,7 +64,7 @@ export async function InvoiceTable() {
                 <div className="flex items-center justify-end gap-x-3.5">
                   <button className="hover:text-primary">
                     <span className="sr-only">View Invoice</span>
-                    <PreviewIcon />
+                    <Eye />
                   </button>
 
                   <button className="hover:text-primary">

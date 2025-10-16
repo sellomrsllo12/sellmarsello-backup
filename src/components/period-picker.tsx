@@ -1,10 +1,10 @@
 "use client";
 
-import { ChevronUpIcon } from "@/assets/icons";
 import { cn } from "@/lib/utils";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { Dropdown, DropdownContent, DropdownTrigger } from "./ui/dropdown";
+import { ChevronUpIcon } from "lucide-react";
 
 type PropsType<TItem> = {
   defaultValue?: TItem;
