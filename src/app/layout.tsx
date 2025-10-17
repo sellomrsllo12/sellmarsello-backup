@@ -1,11 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Satisfy } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Sello Marsello",
   description: "Personal portfolio site",
    icons: "/favicon.ico",
 };
+
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export default function RootLayout({
   children,
@@ -14,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-900 text-white antialiased">
+      <body className={`${satisfy.className} bg-gray-900 text-white antialiased`}>
         {children}
       </body>
     </html>
