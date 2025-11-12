@@ -1,5 +1,5 @@
 
-
+import { Mail, Github, Linkedin } from "lucide-react";
 export default function Profile() {
   return (
     <section 
@@ -17,19 +17,24 @@ export default function Profile() {
           Music, math, and coding are all parts of who I am.
         </p>
 
-        <div className="mt-4 space-x-4">
+        <div className="mt-4 flex space-x-4 justify-center items-center text-gray-300">
           <a href="https://github.com/sellomrsllo12"
           target="_blank"
-          rel="noopener norefereer"
-          className="text-white-0000 hover:underline">
-            GitHub
+          rel="noopener noreferrer"
+          className="hover:text-white transition-transform hover:scale-110">
+            <Github size={28}/>
           </a>
           <a href="https://www.linkedin.com/in/marsellomaail/" 
           target="_blank"
-          rel="noopener norefereer"
-          className=" hover:underline">
-            LinkedIn
+          rel="noopener noreferrer">
+            <Linkedin size={28}/>
           </a>
+
+          <a href="mailto: sello26marsello@gmail.com">
+            <Mail
+            size={28}/>
+          </a>
+
         </div>
 
       </div>

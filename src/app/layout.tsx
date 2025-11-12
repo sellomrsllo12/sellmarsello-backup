@@ -5,7 +5,7 @@ import { Satisfy } from 'next/font/google'
 export const metadata: Metadata = {
   title: "Sello Marsello",
   description: "Personal portfolio site",
-   icons: "/favicon.ico",
+   icons: {icon: "/favicon-new.ico"},
 };
 
 const satisfy = Satisfy({

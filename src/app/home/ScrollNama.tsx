@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { Satisfy } from "next/font/google";
 
 const satisfy = Satisfy({
@@ -20,11 +19,11 @@ export default function HeroSection() {
 
   useEffect(() => {
     const unsubscribe = scrollY.on("change", (y) => {
-      if (isLocked && y > 220) {
+      if (isLocked && y > 200) {
         setIsLocked(false);
 
       }
-      else if (!isLocked && y <= 220) {
+      else if (!isLocked && y <= 200) {
         setIsLocked(true)}
     });
     return () => unsubscribe();
@@ -32,7 +31,7 @@ export default function HeroSection() {
 
   return (
     <main className="relative w-full text-white">
-      {isLocked && <div style={{ height: "100vh" }} />}
+      {isLocked && <div style={{ height: "200vh" }} />}
 
       {/* HERO */}
       <section
@@ -42,13 +41,13 @@ export default function HeroSection() {
         <div className={`${satisfy.className} name absolute flex flex-col items-center justify-center text-center w-screen`}>
           <motion.h1
             style={{ y: topTextY }}
-            className="text-7xl md:text-8xl font-bold leading-none"
+            className="text-7xl md:text-8xl font-bold leading-none w-full"
           >
             Marsello Meliano 
           </motion.h1>
           <motion.h1
             style={{ y: bottomTextY }}
-            className="text-7xl md:text-8xl font-bold leading-none"
+            className="text-7xl md:text-8xl font-bold leading-none w-full"
           >
            Maail
           </motion.h1>
