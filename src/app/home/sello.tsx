@@ -26,11 +26,13 @@ export default function Profile() {
           </a>
           <a href="https://www.linkedin.com/in/marsellomaail/" 
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          className="hover:text-white transition-transform hover:scale-110">
             <Linkedin size={28}/>
           </a>
 
-          <a href="mailto: sello26marsello@gmail.com">
+          <a href="mailto: sello26marsello@gmail.com"
+          className="hover:text-white transition-transform hover:scale-110">
             <Mail
             size={28}/>
           </a>
