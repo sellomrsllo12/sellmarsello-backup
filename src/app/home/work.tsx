@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 
 export default function MyWork() {
   return(
@@ -20,6 +21,17 @@ export default function MyWork() {
             <h3 className="text-xl font-semibold">Sanitas</h3>
             <p className="text-gray-600">
               Sanitas is a digital health platform designed to make medical information and first aid guidance more accessible to everyone. It helps users handle emergencies through interactive first-aid tutorials, smart symptom-based medicine recommendations, and quick access to nearby pharmacies or clinics. Beyond providing practical health tools, Sanitas connects people with trusted medical partners and promotes a culture of awareness and preparedness. Built with a focus on families, the app encourages Indonesians to take proactive steps toward a healthier, safer, and more informed lifestyle.
+            </p>
+          </li>
+          <li className="border-b border-gray-200 pb-4">
+            <a
+            className="text-xl font-semibold"
+            href="https://hrta-gold.vercel.app" 
+            target="_blank"
+            rel="noopener noreferrer"
+            >HRTA Gold Dashboard</a>
+            <p className="text-gray-600">
+              This project proposes a strategic auto round-up savings program for HRTA Gold, where every digital transaction is rounded up and the difference is automatically converted into gold. The initiative creates a virtual gold inventory, enabling HRTA to increase revenue while reducing physical stock and working capital needs. Targeting young consumers, the program includes gamification, personalized insights, and social features to boost engagement. Designed with a five-year roadmap, the program covers partner integration, UX development, regulatory compliance, pilot testing, and gradual feature expansion such as streak challenges and group saving.
             </p>
           </li>
         </ul>
